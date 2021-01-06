@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:scrollbars="vertical"
+        tools:context=".Support_Fund">
+
+        <com.google.android.gms.ads.doubleclick.PublisherAdView
+            xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/publisherAdView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center"
+            ads:adSize="BANNER"
+            ads:adUnitId="ca-app-pub-3898269947993948/8489901673">
+        </com.google.android.gms.ads.doubleclick.PublisherAdView>
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="76dp"
+            android:background="@null"
+            android:src="@drawable/phone"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text="모델명"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"/>
+
+
+            <Spinner
+                android:id="@+id/spinner1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:entries="@array/phone"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="10dp"
+            android:text="▲구입할 기기가 선택지에 없다면 아무거나 선택" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="출고가"
+                android:textSize="20dp"
+                android:textColor="#000000"
+                android:layout_weight="2"/>
+
+            <TextView
+                android:id="@+id/result1"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="17dp"
+                android:textColor="#000000"
+                android:hint="결과값"
+                />
+
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="10dp"
+            android:text="▲중고기기이므로 출고가는 계산에 영향을 미치지 않습니다" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="중고기기 가격"
+                android:textSize="20dp"
+                android:textColor="#000000"
+                android:layout_weight="2"/>
+
+            <EditText
+                android:id="@+id/money3"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:inputType="number"
+                android:digits="0123456789"
+                android:hint="숫자를 입력하세요"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="요금제"
+                android:textSize="20dp"
+                android:textColor="#000000"
+                android:layout_weight="2"/>
+
+            <EditText
+                android:id="@+id/money2"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:inputType="number"
+                android:digits="0123456789"
+                android:hint="숫자를 입력하세요"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="20dp"
+            android:text="Tip! 중고폰은 약정이 없으므로 알뜰 요금제도 고려해보세요!\n일반 통신3사 가족결합할인보다 저렴할 가능성이 높습니다."
+            android:textColor="#FF5252"/>
+
+
+
+
+
+
+
+        <ImageButton
+            android:id="@+id/result_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/calculating"
+            android:layout_gravity="center"
+            android:background="#FFD740"
+            />
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text="실제 한달 요금"
+                android:textColor="#000000"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/later_money"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:hint="결과값"
+                android:textColor="#000000"
+                android:textSize="20dp" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="10dp"
+            android:text="▲입력한 요금제가 실제 한달 요금 입니다" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="총 납입 금액(2년)"
+                android:textSize="18dp"
+                android:textColor="#000000"
+                android:layout_marginTop="20dp"
+                android:layout_weight="2"/>
+
+            <TextView
+                android:id="@+id/result5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:hint="결과값"
+                android:textColor="#000000"
+                android:textSize="20dp" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="▲중고폰은 약정이 없습니다. 참고용 자료 입니다"
+            android:layout_gravity="right"
+            android:layout_marginRight="10dp"
+            />
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="기기값 포함\n월 요금"
+                android:textSize="18dp"
+                android:textColor="#000000"
+                android:layout_marginTop="20dp"
+                android:layout_weight="2"/>
+
+            <TextView
+                android:id="@+id/result3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:hint="결과값"
+                android:textColor="#000000"
+                android:textSize="20dp" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="10dp"
+            android:gravity="right"
+            android:text="▲통신 3사처럼 기기값+요금제를 할부로 따졌을 때 요금입니다\n 참고용 자료입니다" />
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/developer_blog"
+            android:onClick="onButton2Clicked" />
+
+    </LinearLayout>
+
+</ScrollView>

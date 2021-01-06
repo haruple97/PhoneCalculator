@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="phone">
+        <item>갤럭시폴드</item>
+        <item>갤럭시폴드2</item>
+        <item>갤럭시 Z플립 5G</item>
+        <item>갤럭시 노트20</item>
+        <item>갤럭시 노트20 울트라</item>
+        <item>갤럭시 S20 FE</item>
+        <item>갤럭시 Z플립</item>
+        <item>갤럭시 S20 울트라</item>
+        <item>갤럭시 S20 플러스</item>
+        <item>갤럭시 S20 </item>
+        <item>갤럭시 노트10+ (512GB)</item>
+        <item>갤럭시 노트10+ (256GB)</item>
+        <item>갤럭시 노트10</item>
+        <item>갤럭시 S10 5G (512GB)</item>
+        <item>갤럭시 S10 5G (256GB)</item>
+        <item>갤럭시 S10+ (512GB)</item>
+        <item>갤럭시 S10+ (128GB)</item>
+        <item>갤럭시 S10 (512GB)</item>
+        <item>갤럭시 S10 (128GB)</item>
+        <item>갤럭시 S10e</item>
+        <item>아이폰 12 미니(256GB)</item>
+        <item>아이폰 12 미니(128GB)</item>
+        <item>아이폰 12 미니(64GB)</item>
+        <item>아이폰 12 프로 맥스(512GB)</item>
+        <item>아이폰 12 프로 맥스(256GB)</item>
+        <item>아이폰 12 프로 맥스(128GB)</item>
+        <item>아이폰 12 프로(512GB)</item>
+        <item>아이폰 12 프로(256GB)</item>
+        <item>아이폰 12 프로(128GB)</item>
+        <item>아이폰 12 (256GB)</item>
+        <item>아이폰 12 (128GB)</item>
+        <item>아이폰 12 (64GB)</item>
+        <item>아이폰 11 pro max(512GB)</item>
+        <item>아이폰 11 pro max(256GB)</item>
+        <item>아이폰 11 pro max(64GB)</item>
+        <item>아이폰 11 pro (512GB)</item>
+        <item>아이폰 11 pro (256GB)</item>
+        <item>아이폰 11 pro (64GB)</item>
+        <item>아이폰 11 (256GB)</item>
+        <item>아이폰 11 (128GB)</item>
+        <item>아이폰 11 (64GB)</item>
+    </string-array>
+</resources>
